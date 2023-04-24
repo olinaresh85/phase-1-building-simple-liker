@@ -3,9 +3,19 @@ const EMPTY_HEART = '♡'
 const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
+function doSomething() {
+
+  
+  const likeGlyph = document.getElementsByClassName('like-glyph');
+  Array.from(likeGlyph).forEach(like => {
+    
+    like.textContent = FULL_HEART
+    like.className = 'activated-heart'
 
 
-
+  });
+}
+doSomething();
 
 //------------------------------------------------------------------------------
 // Don't change the code below: this function mocks the server response
